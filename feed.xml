@@ -6,9 +6,181 @@
 </description>
     <link>https://namecoin.org//</link>
     <atom:link href="https://namecoin.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 07 Jun 2016 06:36:31 +0000</pubDate>
-    <lastBuildDate>Tue, 07 Jun 2016 06:36:31 +0000</lastBuildDate>
+    <pubDate>Sun, 03 Jul 2016 22:53:59 +0000</pubDate>
+    <lastBuildDate>Sun, 03 Jul 2016 22:53:59 +0000</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Decentralized Web Summit Recap</title>
+        <description>&lt;p&gt;As was mentioned on the forum and /r/Namecoin, I represented Namecoin at the Decentralized Web Summit at the Internet Archive in San Francisco, June 6 - June 10.  Lots of awesomeness occurred.&lt;/p&gt;
+
+&lt;p&gt;I participated in a panel on naming and identity systems on Wednesday.  Other panelists were Christopher Allen (Blockstream), Muneeb Ali (Blockstack), and Joachim Lohkamp (Jolocom); Chelsea Barabas (MIT Center for Civic Media) moderated.  The panel had a diverse set of perspectives, and I think the discussion was informative.&lt;/p&gt;
+
+&lt;p&gt;On Thursday, I did a lightning talk.  The talk briefly introduced Namecoin, and then went on to new developments, specifically new announcements about HTTPS and SPV.  The lightning talk concluded with an invitation to talk to us about collaboration, and a plug for my workshop (which immediately followed).&lt;/p&gt;
+
+&lt;p&gt;The workshop was basically an intro to actually using Namecoin.  I walked the attendees through registering domain names and identities, viewing domain names with ncdns, and logging into websites with NameID.  We had some minor technical issues during the workshop (which is to be expected), but nothing too bad.  At the end of the workshop, I showed a demo of the TLS code working.  (Major thanks go out to fellow Namecoin developers Brandon Roberts, Jonas Östman, Joseph Bisch, and Cassini for helping me put together the workshop.)&lt;/p&gt;
+
+&lt;p&gt;But of course, I didn’t fly to San Francisco &lt;em&gt;just&lt;/em&gt; to do a panel, lightning talk, and workshop.  A major goal was to talk to as many other projects as possible to see where we could collaborate.  (No single project is going to decentralize the entire Web, but working together, we might have a shot.)  I won’t list all the conversations I had on this post, because I want people to be able to talk freely to me at conferences without being worried that the conversation will be posted for the world to see, but the number of orgs I talked to stands at at least 23.  Hopefully we’ll be able to announce some results of these conversations in the near future.&lt;/p&gt;
+
+&lt;p&gt;And of course, it wouldn’t be an event by the Internet Archive without archived videos, so here are some of the highlights that Namecoiners will find particularly interesting:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://archive.org/details/DecentralizedWeb20160609pt1?start=21490&quot;&gt;Lightning Talk: Jeremy Rand of Namecoin&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://archive.org/details/DecentralizedWeb20160607pt3?start=3015&quot;&gt;Builder’s Day Interview: Tamas Kocsis of ZeroNet (uses Namecoin)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://archive.org/details/DecentralizedWeb20160609pt1?start=10987&quot;&gt;Lightning Talk: Tamas Kocsis of ZeroNet (uses Namecoin)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://archive.org/details/DecentralizedWeb20160608pt1?start=11888&quot;&gt;Naming and User Identities Panel&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Overall, it was an excellent event.  I highly recommend watching all the other non-Namecoin content as well: &lt;a href=&quot;https://archive.org/details/decentralizedwebsummit2016?&amp;amp;sort=publicdate&quot;&gt;full archives of all the talks are here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also want to thank Brewster Kahle and Wendy Hanamura for organizing the summit, and Kyle Drake of Neocities, Greg Slepak of okTurtles, and John Light of Bitseed for inviting me to attend.  Also thanks to all the other organizers, speakers, and attendees: you’re all awesome.  I really hope that Internet Archive makes this a regular event.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 03 Jul 2016 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2016/07/03/decentralized-web-summit.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2016/07/03/decentralized-web-summit.html</guid>
+        
+        <category>News</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>NMControl 0.8.1</title>
+        <description>&lt;p&gt;Out now: &lt;a href=&quot;/download/&quot;&gt;NMControl v0.8.1&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2015/11/10/nmcontrol-0.8.1.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2015/11/10/nmcontrol-0.8.1.html</guid>
+        
+        <category>Releases</category>
+        
+        <category>NMControl Releases</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>UPNP Vulnerability in Bitcoin Core affects Namecoin</title>
+        <description>&lt;p&gt;A vulnerability was found in &lt;a href=&quot;https://bitcoin.org/en/alert/2015-10-12-upnp-vulnerability&quot;&gt;Bitcoin Core&lt;/a&gt;. It allows an attack from malicious peers in the local network via UPNP. Namecoin is affected, too, so everybody should turn off UPNP until further notice.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2015/10/13/upnp-vulnerability.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2015/10/13/upnp-vulnerability.html</guid>
+        
+        <category>Alerts</category>
+        
+        <category>NamecoinQ Alerts</category>
+        
+        <category>Namecoin Core Alerts</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Fix for OpenSSL Consensus Vulnerability has been deployed on 100% of mining hashpower</title>
+        <description>&lt;p&gt;Fix for OpenSSL Consensus Vulnerability has been deployed on 100% of mining hashpower.  Users of NamecoinQ (i.e. namecoind/Namecoin-Qt 0.3.x) are on semi-SPV security, and should wait for at least 6 confirmations for incoming transactions.  Users of Namecoin Core (in beta) are on full-node security.  Thanks to the miners for their quick action and everyone else who assisted in the response.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Aug 2015 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2015/08/13/fix-for-openssl-consensus-vulnerability.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2015/08/13/fix-for-openssl-consensus-vulnerability.html</guid>
+        
+        <category>Alerts</category>
+        
+        <category>NamecoinQ Alerts</category>
+        
+        <category>Namecoin Core Alerts</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>OpenSSL Consensus Vulnerability affects Namecoin</title>
+        <description>&lt;p&gt;Warning: &lt;a href=&quot;https://forum.namecoin.info/viewtopic.php?f=2&amp;amp;t=2354&quot;&gt;severe vulnerability disclosed&lt;/a&gt; - be careful.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 29 Jul 2015 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2015/07/29/openssl-consensus-vulnerability.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2015/07/29/openssl-consensus-vulnerability.html</guid>
+        
+        <category>Alerts</category>
+        
+        <category>NamecoinQ Alerts</category>
+        
+        <category>Namecoin Core Alerts</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Namecoin Bounty Cornucopia</title>
+        <description>&lt;p&gt;Check out the &lt;a href=&quot;https://forum.namecoin.info/viewtopic.php?p=14754&quot;&gt;Namecoin Bounty Cornucopia&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2015/05/19/namecoin-bounty-cornucopia.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2015/05/19/namecoin-bounty-cornucopia.html</guid>
+        
+        <category>News</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Namecoin&#39;s 4th Birthday</title>
+        <description>&lt;p&gt;The &lt;strong&gt;Namecoin&lt;/strong&gt; blockchain is now &lt;strong&gt;four years old&lt;/strong&gt;. Happy birthday!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 17 Apr 2015 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2015/04/17/namecoin-4th-birthday.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2015/04/17/namecoin-4th-birthday.html</guid>
+        
+        <category>News</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>N-O-D-E Interviews Daniel Kraft</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://n-o-d-e.net/post/113777384551/the-namecoin-interview-censorship-resistant&quot;&gt;Interview&lt;/a&gt; with Namecoin lead developer Daniel Kraft.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2015/03/20/node-interviews-daniel-kraft.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2015/03/20/node-interviews-daniel-kraft.html</guid>
+        
+        <category>News</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Softfork Upcoming</title>
+        <description>&lt;p&gt;&lt;strong&gt;Softfork&lt;/strong&gt; upcoming with block 212500 (around New Year’s Eve). Pool operators and solo miners please &lt;a href=&quot;/download/&quot;&gt;update to v0.3.80&lt;/a&gt; asap. Regular users are recommended to update, too.  See the &lt;a href=&quot;https://forum.namecoin.info/viewtopic.php?p=13717&quot;&gt;Release notes.&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 19 Dec 2014 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2014/12/19/softfork-namecoin-0.3.80.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2014/12/19/softfork-namecoin-0.3.80.html</guid>
+        
+        <category>Alerts</category>
+        
+        <category>NamecoinQ Alerts</category>
+        
+        <category>Releases</category>
+        
+        <category>NamecoinQ Releases</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Happy Halving Day!</title>
+        <description>&lt;p&gt;As of block &lt;strong&gt;210000&lt;/strong&gt; the Namecoin block reward halved to &lt;strong&gt;25NMC&lt;/strong&gt;. Happy halving day!&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Dec 2014 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2014/12/16/halving-day.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2014/12/16/halving-day.html</guid>
+        
+        <category>News</category>
+        
+        
+      </item>
     
   </channel>
 </rss>

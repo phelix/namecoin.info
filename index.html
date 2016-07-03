@@ -11,13 +11,101 @@
 ">
 
     <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    
+    <style>
+    /* Work in progress, created by Ben <dotbitgod@gmail.com>. */
+
+body {
+    background: #F7F7F7;
+    background: #292e3c;
+    font-size: 18px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    word-wrap: break-word;
+}
+
+body > header {
+    background: #999;
+}
+
+.lead {
+    font-size: 1.9em;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #495f7e;
+}
+
+body > footer {
+    background: #292e3c url(/images/fancy.jpg) center bottom;
+    height: 99px;
+}
+
+body > footer > .container, body > footer > .container-fluid {
+    opacity: 0.6;
+    padding-top: 33px;
+}
+
+
+body > footer a, body > footer a:hover {
+    color: #FFF;
+}
+
+nav ul li {
+    display: inline;
+}
+
+#fancy-graphic {
+    height: 350px;
+    background: #292e3c url(/images/fancy.jpg) center top fixed;
+    padding-top: 125px;
+}
+
+#fancy-graphic p {
+    font-size: 4em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FFF;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 1px 1px 1px #000;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 0;
+}
+
+@media (max-width: 549px) {
+  #fancy-graphic {
+    height: 262.5px;
+    padding-top: 93.75px;
+  }
+  
+  #fancy-graphic p {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 399px) {
+  #fancy-graphic {
+    height: 218.75px;
+    padding-top: 78.125px;
+  }
+  
+  #fancy-graphic p {
+    font-size: 2.5em;
+  }
+}
+
+#content {
+    position: relative;
+    z-index: 9;
+    background: #F7F7F7;
+    padding: 40px;
+}
+
+    </style>
     
     <link rel="canonical" href="https://namecoin.org//">
-    
-    <script src="/js/jquery-1.11.0.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/script.js"></script>
 </head>
 
 
@@ -26,7 +114,7 @@
     <header class="site-header">
 
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="navbar-header">
                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                         <span class="sr-only">Toggle navigation</span>
@@ -56,7 +144,7 @@
 
 </header>
 
-<div id="fancy-graphic"><div class="container"><p>
+<div id="fancy-graphic"><div class="container-fluid"><p>
 <script type="text/javascript">
 var taglines = [
     '<strong>In information</strong><br />we <strong>trust</strong>.',
@@ -73,8 +161,8 @@ document.write(rand);
 </p></div></div>
 
 
-    <div id="content"
-      ><div class="container">
+    <div id="content">
+      <div class="container-fluid">
         <div class="post">
 
   <header class="post-header">
@@ -132,25 +220,29 @@ document.write(rand);
 
 <h2 id="news">News</h2>
 
-<p><strong>2015-11-10</strong> Out now: <a href="/download/">NMControl v0.8.1</a>.</p>
+<p><strong><a href="/2016/07/03/decentralized-web-summit.html">2016-07-03</a></strong> As was mentioned on the forum and /r/Namecoin, I represented Namecoin at the Decentralized Web Summit at the Internet Archive in San Francisco, June 6 - June 10.  Lots of awesomeness occurred.</p>
 
-<p><strong>2015-10-13</strong> A vulnerability was found in <a href="https://bitcoin.org/en/alert/2015-10-12-upnp-vulnerability">Bitcoin Core</a>. It allows an attack from malicious peers in the local network via UPNP. Namecoin is affected, too, so everybody should turn off UPNP until further notice.</p>
+<p><a href="/2016/07/03/decentralized-web-summit.html">Read more…</a> </p>
 
-<p><strong>2015-08-13</strong> Fix for OpenSSL Consensus Vulnerability has been deployed on 100% of mining hashpower.  Users of NamecoinQ (i.e. namecoind/Namecoin-Qt 0.3.x) are on semi-SPV security, and should wait for at least 6 confirmations for incoming transactions.  Users of Namecoin Core (in beta) are on full-node security.  Thanks to the miners for their quick action and everyone else who assisted in the response.</p>
+<p><strong><a href="/2015/11/10/nmcontrol-0.8.1.html">2015-11-10</a></strong> Out now: <a href="/download/">NMControl v0.8.1</a>.</p>
 
-<p><strong>2015-07-29</strong> Warning: <a href="https://forum.namecoin.info/viewtopic.php?f=2&amp;t=2354">severe vulnerability disclosed</a> - be careful.</p>
+<p><strong><a href="/2015/10/13/upnp-vulnerability.html">2015-10-13</a></strong> A vulnerability was found in <a href="https://bitcoin.org/en/alert/2015-10-12-upnp-vulnerability">Bitcoin Core</a>. It allows an attack from malicious peers in the local network via UPNP. Namecoin is affected, too, so everybody should turn off UPNP until further notice.</p>
 
-<p><strong>2015-05-19</strong> Check out the <a href="https://forum.namecoin.info/viewtopic.php?p=14754">Namecoin Bounty Cornucopia</a>.</p>
+<p><strong><a href="/2015/08/13/fix-for-openssl-consensus-vulnerability.html">2015-08-13</a></strong> Fix for OpenSSL Consensus Vulnerability has been deployed on 100% of mining hashpower.  Users of NamecoinQ (i.e. namecoind/Namecoin-Qt 0.3.x) are on semi-SPV security, and should wait for at least 6 confirmations for incoming transactions.  Users of Namecoin Core (in beta) are on full-node security.  Thanks to the miners for their quick action and everyone else who assisted in the response.</p>
 
-<p><strong>2015-04-17</strong> The <strong>Namecoin</strong> blockchain is now <strong>four years old</strong>. Happy birthday!</p>
+<p><strong><a href="/2015/07/29/openssl-consensus-vulnerability.html">2015-07-29</a></strong> Warning: <a href="https://forum.namecoin.info/viewtopic.php?f=2&amp;t=2354">severe vulnerability disclosed</a> - be careful.</p>
 
-<p><strong>2015-03-20</strong> <a href="http://n-o-d-e.net/post/113777384551/the-namecoin-interview-censorship-resistant">Interview</a> with Namecoin lead developer Daniel Kraft.</p>
+<p><strong><a href="/2015/05/19/namecoin-bounty-cornucopia.html">2015-05-19</a></strong> Check out the <a href="https://forum.namecoin.info/viewtopic.php?p=14754">Namecoin Bounty Cornucopia</a>.</p>
 
-<p><strong>2014-12-19</strong> <strong>Softfork</strong> upcoming with block 212500 (around New Year’s Eve). Pool operators and solo miners please <a href="/download/">update to v0.3.80</a> asap. Regular users are recommended to update, too.  See the <a href="https://forum.namecoin.info/viewtopic.php?p=13717">Release notes.</a></p>
+<p><strong><a href="/2015/04/17/namecoin-4th-birthday.html">2015-04-17</a></strong> The <strong>Namecoin</strong> blockchain is now <strong>four years old</strong>. Happy birthday!</p>
 
-<p><strong>2014-12-16</strong> As of block <strong>210000</strong> the Namecoin block reward halved to <strong>25NMC</strong>. Happy halving day!</p>
+<p><strong><a href="/2015/03/20/node-interviews-daniel-kraft.html">2015-03-20</a></strong> <a href="http://n-o-d-e.net/post/113777384551/the-namecoin-interview-censorship-resistant">Interview</a> with Namecoin lead developer Daniel Kraft.</p>
 
-<p><strong>2014-04-20</strong> Thanks to <strong>Shobute</strong> for designing and <strong>Indolering</strong> for pushing the <strong>new website</strong>.</p>
+<p><strong><a href="/2014/12/19/softfork-namecoin-0.3.80.html">2014-12-19</a></strong> <strong>Softfork</strong> upcoming with block 212500 (around New Year’s Eve). Pool operators and solo miners please <a href="/download/">update to v0.3.80</a> asap. Regular users are recommended to update, too.  See the <a href="https://forum.namecoin.info/viewtopic.php?p=13717">Release notes.</a></p>
+
+<p><strong><a href="/2014/12/16/halving-day.html">2014-12-16</a></strong> As of block <strong>210000</strong> the Namecoin block reward halved to <strong>25NMC</strong>. Happy halving day!</p>
+
+<p><a href="/news/">Earlier news</a></p>
 
 <p>For the latest news go to the <a href="https://forum.namecoin.org/">Namecoin forum</a> or check out <a href="https://www.reddit.com/r/namecoin">r/namecoin</a>.</p>
 
@@ -171,7 +263,7 @@ document.write(rand);
 
     <footer class="site-footer">
 
-        <div class="container">
+        <div class="container-fluid">
             <ul class="list-inline">
                 <li><a href="https://github.com/namecoin"><i class="fa fa-github fa-2x" title="GitHub">GitHub</i></a></li>
                 <li><a href="https://twitter.com/Namecoin"><i class="fa fa-twitter fa-2x" title="Twitter">Twitter</i></a></li>
@@ -180,6 +272,10 @@ document.write(rand);
             </ul>
         </div>
 
+        <script src="/js/jquery-1.11.0.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/script.js"></script>
+        
 </footer>
 
 
