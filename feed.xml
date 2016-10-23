@@ -6,9 +6,42 @@
 </description>
     <link>https://namecoin.org//</link>
     <atom:link href="https://namecoin.org//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 30 Sep 2016 03:48:41 +0000</pubDate>
-    <lastBuildDate>Fri, 30 Sep 2016 03:48:41 +0000</lastBuildDate>
+    <pubDate>Sun, 23 Oct 2016 06:15:18 +0000</pubDate>
+    <lastBuildDate>Sun, 23 Oct 2016 06:15:18 +0000</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Lightweight SPV Lookups: Initial Beta</title>
+        <description>&lt;p&gt;If you watched &lt;a href=&quot;https://archive.org/details/DecentralizedWeb20160609pt1?start=21490&quot;&gt;my lightning talk at Decentralized Web Summit 2016&lt;/a&gt; (and if you didn’t, shame on you – go watch it right now along with &lt;a href=&quot;https://archive.org/details/decentralizedwebsummit2016?&amp;amp;sort=publicdate&quot;&gt;the other talks&lt;/a&gt;!), you’ll remember that I announced SPV name lookups were working.  I’m happy to announce that that code is now published &lt;em&gt;in preliminary form&lt;/em&gt; on GitHub, and binaries are available for testing.&lt;/p&gt;
+
+&lt;p&gt;You can download it at the &lt;a href=&quot;/download/betas/&quot;&gt;Beta Downloads&lt;/a&gt; page.  Once installed, it’s basically a drop-in replacement for Namecoin Core for any application that does name lookups (such as ncdns).  Test reports are greatly appreciated so that we can do a proper release sooner.&lt;/p&gt;
+
+&lt;p&gt;Initial syncup using a residential clearnet cable modem connection takes between 5 minutes and 10 minutes, depending on the settings.  (It is probably feasible to improve this.)  Lookup latency for &lt;code&gt;name_show&lt;/code&gt; varies from 2 seconds to 4 milliseconds, depending on the settings.  (It is also probably feasible to improve this.)&lt;/p&gt;
+
+&lt;p&gt;This work wouldn’t have been possible without the work of some very awesome people whom I need to thank.&lt;/p&gt;
+
+&lt;p&gt;First, I need to thank Ross Nicoll from &lt;a href=&quot;http://dogecoin.com/&quot;&gt;Dogecoin (warning: non-TLS link)&lt;/a&gt; for creating &lt;a href=&quot;https://github.com/dogecoin/libdohj&quot;&gt;libdohj&lt;/a&gt;, an altcoin abstraction library that has prevented Namecoin from needing to maintain a fork of &lt;a href=&quot;https://bitcoinj.github.io/&quot;&gt;BitcoinJ&lt;/a&gt;.  We’re using the same AuxPoW implementation from libdohj that Dogecoin is using – a fitting repayment, since Dogecoin Core uses the same AuxPoW implementation that Daniel Kraft wrote for Namecoin Core.  We look forward to continuing to work with Ross and the other excellent people at Dogecoin on areas of shared interest.&lt;/p&gt;
+
+&lt;p&gt;Second, I need to thank Sean Gilligan for his work on &lt;a href=&quot;https://github.com/msgilligan/bitcoinj-addons&quot;&gt;bitcoinj-addons&lt;/a&gt;, a collection of tools that includes a JSON-RPC server implemented using BitcoinJ, which can substitute for Bitcoin Core.  Sean is also a big Namecoin enthusiast.  (I also finally got to meet Sean in person at DWS.)&lt;/p&gt;
+
+&lt;p&gt;Last but not least, I need to thank Marius Hanne, operator of the &lt;a href=&quot;https://www.webbtc.com/&quot;&gt;webbtc.com block explorer&lt;/a&gt;.  The SPV lookup client currently is capable of using webbtc.com for extra efficiency (either for checking the height of blocks to download over P2P, or for downloading merkle proofs).  Marius has been incredibly helpful at customizing the webbtc.com API for this purpose.  &lt;a href=&quot;https://github.com/mhanne/block_browser&quot;&gt;webbtc.com is under a free software license (AGPLv3)&lt;/a&gt;, so you can run your own instance if you like.&lt;/p&gt;
+
+&lt;p&gt;Remember: this is a beta, &lt;em&gt;for testing purposes only&lt;/em&gt;.  Don’t use this for situations where incorrect name responses could lead to results that you aren’t willing to accept.&lt;/p&gt;
+
+&lt;p&gt;In addition, some notes about security.  SPV protects you from being served expired name data, and protects you from being served unexpired name data that isn’t part of the longest chain.  However, the SPV modes other than &lt;code&gt;leveldbtxcache&lt;/code&gt; (see the documentation) don’t protect you from being served outdated name data that hasn’t yet expired, nor does it protect you from being served false nonexistence responses, nor does it protect you from someone logging which names you look up.  We made an intentional design decision to trust webbtc.com here, rather than the Namecoin P2P network, because the P2P network is unauthenticated, trivially easy to wiretap, and trivially easy to Sybil.  &lt;code&gt;leveldbtxcache&lt;/code&gt; mode avoids these isues, although it takes about twice as long to synchronize.  We have plans to add further improvements in these areas as well.  SPV also doesn’t protect you from attackers with a large amount of hashpower.  As with Bitcoin, a major reason that miners can’t easily attack end users is because there are enough full nodes on the network to keep the miners honest.  If you have the ability to run Namecoin Core (syncup time of a few hours, and a few GB of storage), you should do so – you’ll have better security for yourself, and you’ll be improving the security of other users who can’t run a full node.&lt;/p&gt;
+
+&lt;p&gt;Have fun testing!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
+        <link>https://namecoin.org//2016/10/23/lightweight-spv-lookups-beta.html</link>
+        <guid isPermaLink="true">https://namecoin.org//2016/10/23/lightweight-spv-lookups-beta.html</guid>
+        
+        <category>Releases</category>
+        
+        <category>libdohj Releases</category>
+        
+        
+      </item>
     
       <item>
         <title>Decentralized Web Summit Recap</title>
@@ -165,19 +198,6 @@
         <category>Releases</category>
         
         <category>NamecoinQ Releases</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Happy Halving Day!</title>
-        <description>&lt;p&gt;As of block &lt;strong&gt;210000&lt;/strong&gt; the Namecoin block reward halved to &lt;strong&gt;25NMC&lt;/strong&gt;. Happy halving day!&lt;/p&gt;
-</description>
-        <pubDate>Tue, 16 Dec 2014 00:00:00 +0000</pubDate>
-        <link>https://namecoin.org//2014/12/16/halving-day.html</link>
-        <guid isPermaLink="true">https://namecoin.org//2014/12/16/halving-day.html</guid>
-        
-        <category>News</category>
         
         
       </item>
